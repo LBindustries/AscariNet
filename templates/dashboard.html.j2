@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Dashboard - AscariNet</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{css}}">
+  </head>
+  <body>
+    {% include 'nav.html.j2' %}
+    <div class="container">
+      <div class="alert alert-warning" role="alert"><center>Per navigare, apri un'altra pagina. Se non riesci a collegarti alla rete, il tuo account è stato bloccato.</center></div>
+      <div class="panel panel-primary" title="Messaggi del sistema">
+        <div class="panel-heading">
+          <h3 class="panel-title">Messaggi del sistema</h3>
+        </div>
+        <div class="panel-body">
+          Bentornato, {{user}}!<p></p>
+          AscariNet è completamente operativo!
+          <p></p>
+          <center><img src="{{banner}}" style="horizontal-align:middle"></center>
+          <p></p>
+        </div>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Informazioni su questo Software</h3>
+          </div>
+          <div class="panel-body">
+            Questo software è basato sul Framework Gestione, programmato da Balugani Lorenzo e con un grande contributo di Stefano Pigozzi.
+            <p></p>
+            Gestione è un software open source di LBcorporation, rilasciato sotto licenza GPL3. LBcorporation non si assume alcuna responsabilità sull'uso che può essere fatto del software.
+            <p></p>
+            <a href="https://github.com/LBindustries/Gestione/wiki">
+              <center><img class="banner2" src="{{banner2}}"></center>
+            </a>
+          </div>
+      </div>
+      <div class="well well-sm">
+        <center>Versione di Gestione 1.05R in licenza a Ascari Tommaso</center>
+      </div>
+      </div>
+    </div>
+    <p> </p>
+
+  </body>
+</html>

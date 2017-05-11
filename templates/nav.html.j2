@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    {% if user %}
+      <ul class="nav navbar-nav">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/dashboard">AscariNet</a>
+        </div>
+        <li class="{% if type is equalto "utenti" %}active{% endif %}"><a href="/user_list">Gestione delle Utenze</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <p class="navbar-text">
+          Accesso eseguito come {{user}}
+        </p>
+        <a href="/" class="btn btn-danger navbar-btn btn-right">Logout</a>
+      </ul>
+    {% else %}
+      <ul class="nav navbar-nav">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">AscariNet</a>
+          </div>
+        </ul>
+    {% endif %}
+  </div>
+</nav>

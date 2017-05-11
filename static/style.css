@@ -1,0 +1,14 @@
+.monospace
+{
+  font-family: "Consolas", monospace;
+}
+
+.btn-right
+{
+  margin-right: 16px;
+}
+
+body
+{
+  padding-top: 70px; /*Per la navbar*/
+}

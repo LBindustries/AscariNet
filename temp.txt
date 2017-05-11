@@ -1,0 +1,7 @@
+<div class="row">
+        <div class="col-sm-6">
+          <p> </p>
+          <a href="https://github.com/LBindustries/Gestione/wiki">
+            <img class="banner" src="{{banner}}">
+          </a>
+        </div>
